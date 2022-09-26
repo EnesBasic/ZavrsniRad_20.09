@@ -1,0 +1,918 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik',sans-serif;
+  font-family: 'Cairo', sans-serif;
+  font-family: 'Caveat', cursive;
+  font-family: 'Mali', cursive;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.2),rgba(4, 9, 30, 0.2)),url(images/mostar.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  overflow-x: hidden;
+}
+
+.header{
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.2),rgba(4, 9, 30, 0.2));/*,url(images/mostar.jpg);*/
+  /*background-size: cover;*/
+  background-position: center;
+  position: absolute;
+}
+
+/*--------START_____NASLOV(headline) + cilim----------------------------*/
+.cilim img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*align-content: flex-end;*/
+}
+
+  div.naslovcilim {
+  /*display: inline-block;
+  align-items: right;*/
+  width:24%;
+  height:24%;
+  padding-left: 100px;
+  margin-left: 700px;
+  position: absolute;
+  margin-top: -1px;
+}
+
+div.naslov{
+  margin-top: -100px;
+}
+
+h1 {
+  font-family: 'Courgette', cursive;/*Naslov font*/
+/* font-family: 'Nabla', cursive;*/
+  color: #2bf7d2a9;/* boja naslova*/
+  font-weight: normal;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;/*pomjeranje h1 Bosna i Hercegovina */
+  padding-left: -150px;/*pomjeranje h1 Bosna i Hercegovina */
+  padding-top: -150px;
+  margin-top: 80px;
+}
+
+/*--------END_____NASLOV(headline) + cilim------------------------------*/
+/*--------START___NAV BAR_pocetak---------------------------------------*/
+
+nav{
+  display: flex;
+  margin: 114px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.nav-links{
+  margin-top: -50px;
+  margin-left: 350px;
+}
+
+nav .zastava{
+  width: 250px;
+  height: 200px;
+  margin-left: -50px;
+  margin-top: -15px;
+}
+
+nav .mapa{
+  width:180px;
+  height: 134px;
+  padding-right: -50px;
+  margin-left: 600px;
+  margin-top: -200px;
+}
+
+
+.nav links{
+  flex: 1;
+  text-align: right;
+
+}
+
+.nav-links ul li{
+list-style: none;
+display: inline-block;
+padding: 8px 12px;
+position: relative;
+padding-right: 5px;
+}
+
+.nav-links ul li a {
+    font-family: 'Cairo', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 450ms;
+}
+
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+
+nav .fa-solid{
+  display:none;
+}
+/*--------END___NAV BAR_pocetak-----------------------------------------*/
+/*--------START___Acoordion---------------------------------------------*/
+
+  .accordion {
+    position: relative;
+    margin-top: 75px;
+    width: 1350px;
+  }
+  
+  [id*="open-accordion"], [id*="close-accordion"] {
+    background: #00a48627;
+    border-bottom: 2px solid rgb(15, 90, 65);
+    line-height: 30px;
+    height: 25px;
+    display: inline-block;
+    margin: 0px 10px;/*pomjeranje zelenog*/
+    position: relative;
+    transform:translate(0%, 15%);/*pomjeranje zelenog*/
+    width: 20%;/*velicina zelenog*/
+  }
+
+  [id*="close-accordion"] {
+    display: none;
+  }
+  
+  .accordion a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    padding-left: 2%;
+    text-decoration: none;
+    text-shadow: none;
+  }
+  
+  [id*="open-accordion"]:after, [id*="close-accordion"]:after {
+    content: "";
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid rgb(12, 112, 96);
+    position: absolute;
+    right: 45px;
+    top: 5px;
+    z-index: 999;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+  }
+  
+  .target-fix {
+    display: block;
+    top: 0;
+    left: 0;
+    position: fixed;
+  }
+  
+  .accordion-content {
+    font-size:17px;
+    background: rgba(235, 193, 138, 0.521);
+    height: 0;
+    margin: 5px 10px 0px; /*pomjeranje zutog teksta*/
+    padding: 0% 15px;/*pomjeranje zutog teksta*/
+    position: relative;
+    overflow: hidden;
+    width: 50%;/*velicina zutog teksta*/
+    transition: all 0.1s ease;
+    text-align: center;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+  }
+
+  .accordion span:target ~ .accordion-content {
+    display: block;
+    height: auto;
+    padding-bottom: 25px;
+    padding-top: 10px;
+  }
+  
+  .accordion span:target ~ [id*="close-accordion"] {
+    display: block;
+  }
+  
+  .accordion span:target ~ [id*="open-accordion"] {
+    display: none;
+  }
+  
+  .accordion span:target ~ [id*="close-accordion"]:after {
+    border-top: 10px solid #333;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+/*--------END___Acoordion-----------------------------------------------*/
+/*--------START___LOGIN REGISTER_button_pocetak-------------------------*/
+
+  .loginBtn {
+    font-family: 'Caveat', cursive;
+    font-family: 'Mali', cursive;
+    font-size: 20px;
+    display:inline-block;
+    text-decoration:none;
+    text-align: center;
+    color:  #ffffff;
+    background-color: rgba(12, 112, 95, 0.473);
+    border: 1px solid  rgb(15, 90, 65);
+    margin:10px;/*pomjeranje loginBtn */
+    margin-left: 10px;;
+    margin-top: 280px;
+    padding: 5px 0px 10px;/*velicina buttona*/
+    font-size: 22px;
+    /*background:transparent;*/
+    position:relative;
+    cursor: pointer;
+    width: 7%;
+    height:fit-content;
+    border-radius: 16px;
+  }
+ 
+  .loginBtn:hover {
+    border:   #6755cf96;;
+    background:  rgba(15, 90, 65, 0.459);
+    transition: 950ms;
+  }
+
+  .registerBtn {
+    font-family: 'Caveat', cursive;
+    font-family: 'Mali', cursive;
+    font-size: 10px;
+    display:inline-block;
+    text-decoration:none;
+    text-align: center;
+    color:  #ffffff;
+    border: 1px solid  rgb(15, 90, 65);
+    margin-left: -140px;
+    margin-top: 210px;
+    padding: 8px 0px 10px;/*velicina buttona*/
+    font-size: 20px;
+    background:transparent;
+    position:absolute;
+    cursor: pointer;
+    width: 18%;
+    height:fit-content;
+    border-radius: 13px;
+  }
+ 
+  .registerBtn:hover {
+    border:   #6755cf96;;
+    background:  rgba(15, 90, 65, 0.459);
+    transition: 950ms;
+  }
+/*--------END___LOGIN REGISTER_button_pocetak--------------------------*/
+/*--------START___FOOTER------------------------------------------------*/
+  .fa{
+    color: #00977e;
+    margin: 0px;
+    cursor: pointer;
+    padding: 0px 0px;
+
+  }
+
+.footer-container {
+  width:fit-content;
+  height:auto;
+  background-color: #333;
+  padding-bottom: 0px;
+  overflow-x: hidden;
+}
+
+.about {
+  width: 100%;
+  height:100px;
+  background-color:#333;
+  color: #fff;
+  display:inline-flex;
+  justify-content: left;
+  flex-wrap:flex;
+  margin: 0px 0px;
+  padding:0px 0px ;
+  position: absolute; 
+  bottom: 0;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  display: inline-flex;
+  flex-direction: row;
+  padding: 12px 100px;
+}
+
+
+div.footer.logo{
+  align-items: center;
+  display: flex;
+  margin:0px;
+}
+
+.logo{
+  width:40px;
+  height:40px;
+  padding-top: 0px; 
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.logo img{
+  width: 40px;
+  height: 40px;
+  margin-top: 60px;
+  margin-left: 30px;
+  padding-top: 0px; 
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.footer p{
+  color: rgb(8, 255, 90);
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0px;
+  padding: 0px; 
+}
+
+div.footer.p1{
+  width:203px;
+  height:75px;
+  margin-top: 35px;
+  margin-left: 35px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+div.footer.p2{
+  width:270px;
+  height: 75px;
+  margin-top: 30px;
+  margin-left: 550px;
+  padding: 0px 0px;
+}
+
+div.footer.ikonice{
+  color:#ffffff;
+  width:300px;
+  height: 75px;
+  margin-top: 35px;
+  margin-left: 400px;
+  cursor: pointer;
+  padding: 0px 0px;
+  justify-content: space-between;
+}
+/*--------END___FOOTER--------------------------------------------------*/
+/*------START___SLIDER--------------------------------------------------*/
+*,
+  *:before,
+*::after{
+  box-sizing:border-box !important;
+}
+
+img {
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+ 
+.slider-wrapper {
+  
+  max-width: 385px;
+  max-height: 400px;
+  margin: 2px 2px;
+  margin-left: 720px;
+  padding-left: 750px;
+  margin-top: 100px;
+}
+ 
+.rotatescroll img {
+  vertical-align: middle;
+  border: 9px solid#544ae0;   /* unutarnji krugovi koji kruze------------*/
+}
+ 
+.rotatescroll img,
+.rotatescroll .overview li {
+  border-radius: 50%;
+}
+ 
+.rotatescroll {
+  position: relative;
+  height: 390px;
+  width: 390px;
+  padding: 40px;
+  overflow: hidden;
+}
+ 
+.rotatescroll .viewport {
+  
+  height: 400px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  pointer-events: none;
+  background-color: #2c626400;  /* pozadina izmeju unutarnjih krugova koji kruze------------*/
+}
+ 
+.rotatescroll .overview {
+  /* position: absolute; */ 
+  position: relative;
+  width: 798px;
+  list-style: none;
+  left: 0;
+  top: 0;
+  margin: -20px 0 0 -20px;
+  padding: 0;
+  z-index: 0;
+}
+ 
+.rotatescroll .overview li {
+  height: 342px;
+  width: 342px;
+  float: left;
+  position: relative;
+  padding: 15px;
+  margin: 4px 0 0 4px;
+}
+ 
+.rotatescroll .overlay {  /*-----------------------VANJSKI KRUG*/
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 390px;/* -------------povecavanje vanjskog kruga-----------------------*/
+  width: 390px;                                                                                                                      /*rgb(255, 255, 255)*/
+  background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 390 390'%3E%3Cg%3E%3Cpath fill='rgb(33, 65, 66)' d='M195,0H0v195C0,87.305,87.305,0,195,0z'/%3E%3Cpath fill='rgb(33, 65, 66)' d='M195,390h195V195C390,302.696,302.695,390,195,390z'/%3E%3Cpath fill='rgb(33, 65, 66)' d='M0,195v195h195C87.305,390,0,302.696,0,195z'/%3E%3Cpath fill='rgb(33, 65, 66)' d='M195,0c107.695,0,195,87.305,195,195V0H195z'/%3E%3C/g%3E%3Cg%3E%3Cpath fill='rgb(33, 65, 66)' d='M195,0C87.304,0,0,87.305,0,195s87.304,195,195,195c107.695,0,195-87.305,195-195S302.695,0,195,0z M195,345c-82.926,0-150-67.074-150-150c0-82.925,67.074-150,150-150c82.926,0,150,67.075,150,150C345,277.926,277.926,345,195,345 z'/%3E%3C/g%3E%3Cg%3E%3Cpath fill='rgb(33, 65, 66)' d='M195,3C88.919,3,3,88.92,3,195s85.919,192,192,192c106.08,0,192-85.92,192-192S301.08,3,195,3z M195,345 c-82.926,0-150-67.074-150-150c0-82.925,67.074-150,150-150c82.926,0,150,67.075,150,150C345,277.926,277.926,345,195,345z'/%3E%3C/g%3E%3Cg%3E%3Cpath fill='rgb(33, 65, 66)'d='M195,43c-84.003,0-152,67.998-152,152c0,84.002,67.997,152,152,152c84.002,0,152-67.998,152-152 C347,110.998,279.002,43,195,43z M195,345c-82.926,0-150-67.074-150-150c0-82.925,67.074-150,150-150c82.926,0,150,67.075,150,150 C345,277.926,277.926,345,195,345z'/%3E%3C/g%3E%3Cg%3E%3Cpath fill='rgb(33, 65, 66)'  d='M137.375,56.438C155.096,49.08,174.598,45,195,45s39.697,4.018,57.417,11.375l16.792-40.458 C246.524,6.489,221.106,1,195,1c-26.107,0-51.759,5.447-74.443,14.875L137.375,56.438z'/%3E%3C/g%3E%3C/svg%3E") 0 0 no-repeat; 
+}
+ 
+.rotatescroll .overlay-interaction {
+   background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 390 390'%3E%3Cg%3E%3Cpath fill='rgb(33, 65, 66)' d='M137.375,56.438C155.096,49.08,174.598,45,195,45s39.697,4.018,57.417,11.375l16.792-40.458 C246.524,6.489,221.106,1,195,1c-26.107,0-51.759,5.447-74.443,14.875L137.375,56.438z'/%3E%3C/g%3E%3C/svg%3E") 0 0 no-repeat;
+   z-index: 1;
+}
+ 
+.rotatescroll [class*="-hovered"] {
+  z-index: 1;
+}
+ 
+.rotatescroll .slideno\(1\),
+.is-slide2-hovered {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.rotatescroll .slideno\(2\),
+.is-slide3-hovered {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.rotatescroll .slideno\(3\),
+.is-slide4-hovered {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+.rotatescroll .slideno\(4\),
+.is-slide5-hovered {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.rotatescroll .slideno\(5\),
+.is-slide6-hovered {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+.rotatescroll .slideno\(6\),
+.is-slide7-hovered {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+.rotatescroll .slideno\(7\),
+.is-slide8-hovered {
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+}
+ 
+.rotatescroll .thumb {
+  touch-action: none;
+  -ms-touch-action: none;
+  position: absolute;
+  top: -3px;
+  cursor: pointer;
+  /* left: 137px; */ 
+  left: 200px;
+  width: 24px;
+  height: 24px;
+  z-index: 200;
+  background: rgb(24, 102, 148);/*------------------------------------------------- tockic pozadina*/
+  border: 2px solid #0014ca;/*------------------------------------------------- tockic border*/
+  border-radius: 50%;
+}
+ 
+.rotatescroll .dot {
+  left: inherit !important;
+  top: 0 !important;
+  z-index: 100;
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  /* top: 0; */
+  
+  right: 0;
+  width: 50%;
+  height: 50%;
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+}
+ 
+.rotatescroll .dot span {
+  /* display: none; */
+}
+ 
+.rotatescroll .dot:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  border-left: 4px solid #000000; /*-----------------------boja izmedu destinacija*/
+  height: 42px;
+  /* display: table-cell; */
+}
+ 
+.rotatescroll .text {
+  padding-top: 20px;
+}
+ 
+.rotatescroll .flip.text {
+  padding-top: 30px;
+}
+ 
+.rotatescroll .flip.text span {
+  top: 5px;
+}
+ 
+.rotatescroll .active .flip.text span {
+  top: 18px !important;
+}
+ 
+.rotatescroll .active h1 div.text {
+  color: rgba(33, 65, 66, 0);
+  padding: 20px;
+  height: 8px !important;
+  text-shadow: 0 0 1px rgba(33, 65, 66, 0) ,2px 1px 1px rgba(33, 65, 66, 0);
+  font-family: AvenirNext-DemiBold, Corbel, "Segoe Ui", "Trebuchet Ms", sans-serif;
+}
+ 
+.rotatescroll .active h1 div.text:hover {
+  color:rgba(33, 65, 66, 0);/*------------------------------------------------- boja slova hover*/
+  text-shadow: none;
+} 
+ 
+.rotatescroll h1 span {
+  line-height: 0.65;
+  white-space: pre;
+  overflow: visible;
+  padding: 0px;
+}
+ 
+.rotatescroll .flip {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg)
+}
+ 
+.rotatescroll .active {}
+ 
+.rotatescroll .dot h1 {
+  position: absolute;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  -webkit-transform: skewY(45deg) rotate(22.5deg);
+          transform: skewY(45deg) rotate(22.5deg);
+  margin: 0;
+  cursor: pointer;
+  text-align: center;
+  font-size: 12px;
+  line-height: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  color:rgba(11, 48, 49, 0); /*---------------------------------------------------------------------*/
+}
+ 
+.rotatescroll .dot-1 {
+  -webkit-transform: rotate(337.5deg) skewY(-45deg);
+          transform: rotate(337.5deg) skewY(-45deg);
+
+}
+ 
+.rotatescroll .dot-2 {
+  -webkit-transform: rotate(22.5deg) skewY(-45deg);
+          transform: rotate(22.5deg) skewY(-45deg);
+}
+ 
+.rotatescroll .dot-3 {
+  -webkit-transform: rotate(67.5deg) skewY(-45deg);
+          transform: rotate(67.5deg) skewY(-45deg);
+}
+ 
+.rotatescroll .dot-4 {
+  -webkit-transform: rotate(112.5deg) skewY(-45deg);
+          transform: rotate(112.5deg) skewY(-45deg);
+}
+ 
+.rotatescroll .dot-5 {
+  -webkit-transform: rotate(157.5deg) skewY(-45deg);
+          transform: rotate(157.5deg) skewY(-45deg);
+}
+ 
+.rotatescroll .dot-6 {
+  -webkit-transform: rotate(202.5deg) skewY(-45deg);
+          transform: rotate(202.5deg) skewY(-45deg);
+}
+ 
+.rotatescroll .dot-7 {
+  -webkit-transform: rotate(247.5deg) skewY(-45deg);
+          transform: rotate(247.5deg) skewY(-45deg);
+}
+ 
+.rotatescroll .dot-8 {
+  -webkit-transform: rotate(292.5deg) skewY(-45deg);
+          transform: rotate(292.5deg) skewY(-45deg);
+}
+
+/*--------END___SLIDER--------------------------------------------------*/
+/*                                                                      */
+/*                                                                      */
+/*                                                                      */
+/*                                                                      */
+/*                                                                      */
+/*                                                                      */                                                                    
+/*                                                                      */                                                                                                                                        
+/*                                                                      */
+/*                                                                      */
+/*                                                                      */
+/*                                                                      */
+/*                                                                      */
+/*--------START___Responsive design-------------------------------------*/
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+  html, body {
+      width: 100%;
+      height: 110%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }   
+
+/*-----ZASTAVA + MAPA-----------------------*/
+  .zastava img{
+    margin: 0 -60px;
+  }
+
+  .mapa img{
+    margin-left: 50px;
+    margin-top: -50px;
+    }
+
+    nav .zastava{
+      width: 150px;
+      height: auto;
+      margin-top: -20px;
+      padding: 0px 0px;
+      position: absolute;
+    }
+    
+    nav .mapa{
+      width: 100px;
+      height: auto;
+      margin: 0px 0px;
+      padding: 10px 0px;
+      position: absolute; 
+      /*top: 0;*/
+    }
+
+/*-----NAVLINKS---------------------------*/
+    .nav-links {
+      position: absolute;
+      background: #5542be8f;
+      height: 50vh;
+      width: 180px;
+      top: 0;
+      right: -180px;
+      text-align:left;
+      z-index: 1;
+      transition: 450ms;
+      margin-top: -25px;
+    }
+
+    nav .fa-solid{
+      display:flex;
+      color: rgb(255, 255, 255);
+      margin: 5px;
+      margin-right: -75px;
+      margin-top: 25px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .nav-links ul{
+      padding: 50px;
+    }
+    .nav-links ul li{
+      padding: 0px 0px;
+      display:block;
+    }
+
+/*-----NASLOV + CILIM-----------------------*/
+.naslov h1{
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 150px;
+}
+.naslov{
+  margin-top: 0px;
+  height: 5px;
+}
+
+div.naslovcilim {
+width: 50%;
+height: 50%;
+margin-left: 0;
+padding-left: 0;
+}
+
+.naslovcilim img {
+  width:150%;
+  height:40%;
+  margin-top: 90px;
+  margin-left: 50px;
+}
+
+/*-----LOGIN + REGISTER---------------------*/
+.loginBtn {
+  font-family: 'Caveat', cursive;
+  font-family: 'Mali', cursive;
+  display: inline-block;
+  text-decoration:none;
+  text-align: center;
+  color:   #ffffffa2;
+  border: 1px solid rgba(15, 90, 65, 0.459);
+  padding-top: 5px;
+  margin: 190px 5px;/*pomjeranje hero-btn */
+  /*padding: 10px -5px;*/
+  font-size: 16px;
+  background:transparent;
+  position:relative;
+  cursor: pointer;
+  width: 15%;
+  height: fit-content;
+  border-radius: 10px;
+}
+
+.registerBtn {
+  font-family: 'Caveat', cursive;
+  font-family: 'Mali', cursive;
+  display:inline-block;
+  text-decoration:none;
+  text-align: center;
+  color:  #ffffffa2;
+  border: 1px solid rgba(15, 90, 65, 0.459);
+  margin-top: 50px;
+  padding-top: 5px;
+  margin-bottom: 0px;
+  margin-left: 40px;
+  padding: 20px -5px;/*velicina buttona*/
+  font-size: 16px;
+  background:transparent;
+  position:relative;
+  cursor: pointer;
+  width: 70%;
+  height:fit-content;
+  border-radius: 10px;
+}
+
+/*-----ACCORDION----------------------------*/
+  .accordion{             
+    display:inline-block;
+    position: absolute;
+    font-size: 10px;
+    width: 160%;        /*  velicina zelenog  */
+    height: 53.5vh;
+  }
+
+  .accordion-content {
+    font-size:10px;
+    background: rgba(235, 193, 138, 0.521);
+    height: 0;
+    margin: 5px 10px 0px; /*pomjeranje zutog teksta*/
+    padding: 0% 15px;     /*pomjeranje zutog teksta*/
+    position: relative;
+    overflow: hidden;
+    width: 60%;            /*velicina zutog teksta*/
+    transition: all 0.1s ease;
+    text-align: center;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+  }
+
+/*-----FOOTER-------------------------------*/
+.about {
+  width: 100%;
+  height:13%;
+  background-color:#333;
+  color: #fff;
+  display:inline-flex;
+  justify-content: left;
+  flex-wrap:wrap;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  position:fixed;
+  bottom: 0;
+  }
+  .footer p{
+    color: rgb(8, 255, 90);
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px; 
+  }
+  
+    div.footer.logo{
+      margin-top: 25px;
+      padding: 0px;
+      margin-left: -20px;
+      margin-right: 50px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    div.footer.p1{
+    width:35px;
+    height: auto;
+    margin-top: 60px;
+    padding: 13px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: 50px  ;
+
+  }
+
+div.footer.p2{
+  width: 270px;
+  height: auto;
+  margin-top: 50px;
+  margin-left: -50px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+div.footer.ikonice{
+  color:#2610e9;
+  width:300px;
+  height: 75px;
+  margin-top: -90px;
+  margin-left: 45px;
+  cursor: pointer;
+  padding: 0px 0px;
+  justify-content: space-between;
+}
+
+/*-----SLIDER-------------------------------*/
+
+.slider-wrapper {
+  
+  max-width: 385px;
+  max-height: 400px;
+  margin: 2px 2px;
+  margin-left:0px;
+  padding-left: 0px;
+  margin-top: 435px;
+  margin-bottom: 0px;
+  position: fixed center;
+}
+
+}

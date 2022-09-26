@@ -1,0 +1,148 @@
+body{
+    background: url(https://images.freecreatives.com/wp-content/uploads/2016/04/Solid-Black-Website-Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+}
+
+.loginbox {
+
+    background: rgb(19,17,17);
+    width: 400px;
+    padding: 40px;
+    overflow: hidden;
+    margin-left: 300px;
+    margin-top: 200px;
+    box-shadow:  0px 0px 80px -7px rgb(212,203,203);
+    border-radius: 5%;
+}
+
+.loginbox h2 {
+    text-transform: uppercase;
+    text-shadow: 5px 1px 2px rgb(251,252,252);
+    text-align: center;
+    font-size:40px;
+    margin-top: 10px;
+}
+
+.loginbox input{
+    width: 89%;
+    display: block;
+    padding: 20px;
+    margin-bottom: 20px;
+    outline: none;
+    border:none;
+    font-size: 16px;
+    border-radius: 15px 50px 30px 5px;
+    text-align: center;
+}
+
+.loginbtn{
+    color:rgb(247,247,247);
+    width: 100%;
+    margin: auto;
+    border-radius: 50px 30px 50px 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-shadow: 3px 0px 2px rgb(93,196,10);
+    box-shadow:  0px 0px 80px rgb(212,203,203);
+    font-weight: bold;
+    font-family: sans-serif;
+    font-style: italic;
+    background: linear-gradient(#4f7a5d39, #25332a);
+}
+
+.loginbtn:hover{
+background: linear-gradient(#25332a, #4f7a5d39);
+}
+
+
+.registerlink{
+    margin-left: 0px;
+}
+.registerlink span{
+    color:white;
+    font-size: 20px;
+}
+
+.registerlink a{
+    text-decoration: none;
+    color:greenyellow;
+    font-size: 15px;
+}
+
+
+
+
+
+
+.registerbox {
+
+    background: rgb(19,17,17);
+    width: 400px;
+    padding: 40px;
+    overflow: hidden;
+    margin-left: 300px;
+    margin-top: 200px;
+    box-shadow:  0px 0px 80px -7px rgb(212,203,203);
+    border-radius: 5%;
+}
+
+.registerbox h2 {
+    text-transform: uppercase;
+    text-shadow: 5px 1px 2px rgb(251,252,252);
+    text-align: center;
+    font-size:40px;
+    margin-top: 10px;
+}
+
+.registerbox input{
+    width: 89%;
+    display: block;
+    padding: 20px;
+    margin-bottom: 20px;
+    outline: none;
+    border:none;
+    font-size: 16px;
+    border-radius: 15px 50px 30px 5px;
+    text-align: center;
+}
+
+.registerbtn{
+    color:rgb(247,247,247);
+    width: 100%;
+    margin: auto;
+    border-radius: 50px 30px 50px 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-shadow: 3px 0px 2px rgb(93,196,10);
+    box-shadow:  0px 0px 80px rgb(212,203,203);
+    font-weight: bold;
+    font-family: sans-serif;
+    font-style: italic;
+    background: linear-gradient(#4f7a5d39, #25332a);
+}
+
+.registerbtn:hover{
+background: linear-gradient(#25332a, #4f7a5d39);
+}
+
+.loginlink{
+    margin-left: 0px;
+}
+
+.loginlink span{
+    color:white;
+    font-size: 20px;
+}
+
+.loginlink a{
+    text-decoration: none;
+    color:greenyellow;
+    font-size: 15px;
+}
+
+b{
+    color: white;
+    font-size: 15px;
+}

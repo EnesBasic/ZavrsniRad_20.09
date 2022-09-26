@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-----META_TAGOVI---------------------------------------------------------------------------------------------------------------------------->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="descritpion" content="turizam"
+    <meta name="author" content="@Enes Basic">
+    <meta name="robots" content="nofollow">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>BIH Turizam</title>
+<!-----FONTOVI-------------------------------------------------------------------------------------------------------------------------------->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lateef&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Mali:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap" rel="stylesheet">
+<!--IKONE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<!--SCRIPTA JQuery-------------------------------------------------------------------------------------------------------------------------->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+</head>
+
+
+
+
+
+<body>
+<!-----HEADER--------------------------------------------------------------------------------------------------------------------------------->
+    <section class="header">
+        <nav>
+
+<!-----DIV_img_ZASTAVA------------------------------------------------------------------------------------------------------------------------>    
+            <div class="zasmapa">
+                <div class="zastava">
+                    <a href="https://www.youtube.com/watch?v=oyFiOKflwro"> <img class="zastava" src="images/bosniaFlag2.png"></a>
+                </div>
+
+<!-----DIV_img_MAPA--------------------------------------------------------------------------------------------------------------------------->
+                <div class="mapa">
+                    <img src="images/bosniaMap.jpg"></img>
+                </div>
+            </div>
+<!-----DIV_NAVBAR----------------------------------------------------------------------------------------------------------------------------->
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">Dashboard</a>
+                        <li><a href="">Accomodation</a>
+                        <li><a href="">Destinations</a>
+                        <li><a href="">Services</a>
+                        <li><a href="">Sign out</a>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+<!-----DIV_HEADLINE+img_CILIM----------------------------------------------------------------------------------------------------------------->
+        <div class="naslovcilim">
+            <img src="images/cilim.gif" alt="cilim">
+        </div>
+        <div class="naslov">
+            <h1>Putovanje Bosanskim Ćilimom</h1>
+        </div>
+
+<!-----DIV_ACCORDION-------------------------------------------------------------------------------------------------------------------------->
+        <div class="accordion">
+            <span class="target-fix" id="accordion"></span>
+            <div>
+                <span class="target-fix" id="accordion1"></span>
+                    <a href="#accordion1" id="open-accordion1" title="open">English language</a>
+                    <a href="#accordion" id="close-accordion1" title="close">English language</a> 
+                    
+            <div class="accordion-content">
+                <h2>Welcome to Bosnia</h2>
+                <p>Bosnia is a country of beautiful nature and rich history and culture.
+                Bosnia is a country that has known the world for the last 1,000 years,
+                and some sources say it has existed since the 7th century,
+                under its name Bosnia, and it was only by annexation of the Austro-Hungarian Empire
+                in the 19th century that it was given a continuation of Herzegovina,
+                all for the sake of treacherous political influences to divide it more easily,
+                in the time that comes afterwards and eventually prove it.
+                Bosnia is a country where 4 seasons change, and 2 climate zones,
+                mediterranean in the south and continental in the north.
+                Bosnia is mainly a hilly country, with a lot of sums, rivers, lakes and waterfalls.
+                In Bosnia, it manages a variety of fruits and vegetables,
+                so in the north manage plum, apples, pear, peach, cherry, raspberries, blackberries, honey
+                while in the south succeed grapes of olive pomegranate tobacco, mandarins.
+                It is also important to say that bosnia is the only rainforest in Europe that is europe's lungs.
+                In short, Bosnia is a land of many miracles, natural and cultural,
+                various cultures, very rich history, which it has taken on both from the east and the west.
+                She'll always see you, but she never let herself be conquered or obey.</p>
+            </div>
+        </div>
+
+        <div>
+            <span class="target-fix" id="accordion2"></span>
+                <a href="#accordion2" id="open-accordion2" title="open">Bosanski jezik</a>
+                <a href="#accordion" id="close-accordion2" title="close">Bosanski jezik</a>
+        
+        <div class="accordion-content">
+            <h2>Dobro došli u Bosnu</h2>
+            <p>Bosna je zemlja prelijepe prirode i bogate historije/povijesti i kulture.
+                Bosna je drzava koja je svijetu poznata zadnjih 1000 godina, 
+                neki izvori navode da je postojala jos od 7 stoljeća,
+                pod svojim imenom Bosna, a tek je aneksijom Austrougarske Imperije
+                u 19 stoljeću nove ere dobila nastavak Hercegovina,
+                sve zarad izdajnickih političkih utjecaja da bi se u vremenu koje dolazi
+                poslije lakše podijelila a na kraju dokinula.
+                Bosna je zemlja u kojoj se mjenjaju 4 godišnja doba, te 2 klimatske zone,
+                mediteranska na jugu i kontinentalna na sjeveru.
+                Bosna je uglavnom brdovita zemlja, sa puno šuma, rijeka, jezera i vodopada.
+                U Bosni uspijeva raznoliko voće i povrće,
+                tako na sjeveru uspijevaju šljive jabuke kruške breskve višnje trešnje,maline, kupine, med
+                dok na jugu uspijevaju grožđe maslina nar(šipak) duhan, mandarine.  
+                Takođe bitno je kazati da se u Bosni nalazi jedina prašuma u Evropi koja su pluća Evrope. 
+                Ukratko Bosna je zemlja mnogih čuda, prirodnih i kulturoloških,
+                raznih kultura, prebogate historije/povijesti, koje je poprimila kako sa istoka tako i sa zapada.
+                Uvijek će te primiti, ali nikad se nije dala niti se da pokoriti.</p>
+            </div>
+        </div>
+
+        <div>
+            <span class="target-fix" id="accordion3"></span>
+                <a href="#accordion3" id="open-accordion3" title="open">اللغة العربية</a>
+                <a href="#accordion" id="close-accordion3" title="close">اللغة العربية</a>
+                
+            <div class="accordion-content">
+            <style>body{font-family: 'Lateef', cursive;}</style>
+            <h2>اهلا و سهلا الي بوسنة و هرسك</h2> 
+                <p>البوسنة بلد ذو طبيعة جميلة وتاريخ وثقافة غنية.
+                    البوسنة بلد عرف العالم منذ 1000 عام،
+                    وتقول بعض المصادر إنها موجودة منذ القرن 7،
+                    تحت اسمها البوسنة ، وكان فقط عن طريق ضم الإمبراطورية النمساوية المجرية
+                    >في القرن 19 أنه تم إعطاؤه استمرارا للهرسك ،
+                    كل ذلك من أجل التأثيرات السياسية الغادرة للانقسام بسهولة أكبر ،
+                    في الوقت الذي يأتي بعد ذلك وإثبات ذلك في نهاية المطاف.
+                    البوسنة بلد يتغير فيه 4 مواسم ، و 2 مناطق مناخية ،
+                    البحر الأبيض المتوسط في الجنوب والقارية في الشمال.
+                    البوسنة هي أساسا بلد جبلي ، مع الكثير من المبالغ والأنهار والبحيرات والشلالات.
+                    في البوسنة ، تدير مجموعة متنوعة من الفواكه والخضروات ،
+                    حتى في الشمال إدارة تفاح البرقوق من الكمثرى والخوخ والكرز والتوت والعليق والعسل
+                    بينما في الجنوب تخلف عنب تبغ رمان الزيتون والماندرين.
+                    من المهم أيضا القول إن البوسنة هي الغابات المطيرة الوحيدة في أوروبا التي هي رئة أوروبا.
+                    باختصار ، البوسنة هي أرض العديد من المعجزات ، الطبيعية والثقافية ،
+                    ثقافات مختلفة ، تاريخ غني جدا ، والذي أخذته من الشرق والغرب.
+                    سوف تراك دائما ، لكنها لا تسمح لنفسها أو تطيعك أبدا.</p>    
+            </div>
+        </div>
+    </section>
+
+<!-----LOGIN_REGISTER_BUTTON------------------------------------------------------------------------------------------------------------------>
+    <!--<a class="hero-btn" href="slider/index.html">Posjetite nas da saznate više...</a>---Primjer prelaska na drugi page-->
+    <a class="loginBtn" href="login.html">Login</a>
+    <a class="registerBtn" href="register.html">Posjetite nas da saznate više...</a>
+
+<!--JavaSCRIPT_za_NAVBAR---------------------------------------------------------------------------------------------------------------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+<!--JavaSCRIPT_za_AUDIO----------------------------------------------------------------------------------------------------------------------->
+    <audio id="audio" src="audio/andalusian.mp3" autoplay loop preload></audio>
+    <script type="text/javascript">
+    function myFunction() {
+        var x = document.getElementById("audio");
+        x.autoplay = true;
+        x.load(); 
+    }
+    </script>
+
+<!-----FOOTER--------------------------------------------------------------------------------------------------------------------------------->
+<section class="footer-container">
+    <div class="about">
+
+<!-----DIV_img_LOGO--------------------------------------------------------------------------------------------------------------------------->
+        <div class="footer logo">
+            <img src="images/BasicLogo.png" alt="logo" />
+        </div>
+        <div class="footer p1">
+            <p>ZavršniProjekt_ver1.0</p>
+        </div>
+        <div class="footer p2">
+            <p>Copyright <i class="fa-solid fa-copyright"></i> 20/09/2022</i> made by Enes Basic</p>
+        </div>
+        
+<!-----FOOTER_img_ikonice--------------------------------------------------------------------------------------------------------------------->
+        <div class="footer ikonice">             
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            <a href="https://twitter.com/"> <i class="fa-brands fa-square-twitter fa-2x"></i></a>
+            <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+        </div>
+    </div>          
+</section>
+
+<!-----SLIDER--------------------------------------------------------------------------------------------------------------------------------->
+<div class="slider-wrapper">
+    <div class="rotatescroll" id="rotatescroll">
+      <div class="viewport">
+        <ul class="overview">
+          <li>
+            <a href="#"><img src="images/Sarajevo_vijecnica1.png" alt="Sarajevo" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/sarajevo4.png" alt="Sarajevo"/></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/pocitelj1.png" alt="Pocitelj"/></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/japodski_otoci1.png" alt="Japodski otoci"/></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/una1.png" alt="Strbacki buk"/></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/Vlasic_babanovac1.png" alt="Vlasic"/></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/semesnica1.png" alt="Semesnica"/></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/blagaj1.png" alt="Blagaj"/></a>
+          </li>
+        </ul>
+      </div>
+   
+      <div class="dot"></div>
+      <div class="overlay overlay-interaction" id="overlayInteraction"></div>
+      <div class="overlay overlay-static"></div>
+      <div class="overlay overlay-active" id="overlayActive"></div>
+      <div class="thumb"></div>
+    </div>
+  </div>
+  <script src="function.js"></script>
+</body>
+</html>
